@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="profile-pic/background.jpg" alt="Your Photo" class="profile-pic" width="200" height="200">
+            <p>Hello, I am Yoganjaneyulu, a passionate explorer of technology, blending creativity and expertise in AI, data science, and web development.</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello! I’m Yoganjaneyulu, a passionate web developer and designer with a deep interest in artificial intelligence, data science, and the ever-evolving world of technology.</p>
+        <p>Currently pursuing my bachelor’s degree in computer science with a specialization in AI and data science in Chennai, Tamil Nadu, I’m on a mission to turn ideas into impactful digital experiences.</p>
+        <p>I have hands-on experience, worked on innovative projects, and I’m expanding my skills to build robust and dynamic web applications. I’m also exploring stock market trading and am fascinated by the potential of AI in finance.</p>
+        <p>Originally from Ongole, Prakasam district, Andhra Pradesh, I bring dedication, creativity, and a relentless curiosity to every project I undertake. I’m actively building my portfolio to secure a fulfilling role by 2028, where I can contribute to cutting-edge technologies and make a meaningful impact.</p>
+        <div class="about-me-section">
+            <p class="highlight-text">Let’s connect and create something amazing together!</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">My Sql</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of your project goes here.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of your project goes here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>You can reach me at <a href="mailto:yoganjaneyulu4369@gmail.com">yoganjaneyulu4369@gmail.com</a>.</p>
+        <p>My contact number: <span>8106057529</span></p>
+    </section>
+
+    <section id="visitor-registration" class="section">
+        <h2>Visitor Registration</h2>
+        <form id="registration-form" action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="purpose">Purpose of Visit:</label>
+            <input type="text" id="purpose" name="purpose" required>
+
+            <label for="meeting_time">Preferred Meeting Time:</label>
+            <input type="datetime-local" id="meeting_time" name="meeting_time" required>
+
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
