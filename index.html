@@ -11,7 +11,7 @@
     <header class="header">
         <div class="container">
             <h1>Welcome to My Portfolio</h1>
-            <img src="profile-pic/background.jpg" alt="Your Photo" class="profile-pic" width="200" height="200">
+            <img src="profile-pic/background.jpg" alt="Profile picture of Yoganjaneyulu" class="profile-pic" width="200" height="200">
             <p>Hello, I am Yoganjaneyulu, a passionate explorer of technology, blending creativity and expertise in AI, data science, and web development.</p>
         </div>
     </header>
@@ -71,7 +71,7 @@
 
     <section id="visitor-registration" class="section">
         <h2>Visitor Registration</h2>
-        <form id="registration-form" action="submit.php" method="post">
+        <form id="registration-form" action="https://formspree.io/f/meoabnbd" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -79,7 +79,7 @@
             <input type="email" id="email" name="email" required>
 
             <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone" required>
+            <input type="text" id="phone" name="phone" required pattern="[0-9]{10}" title="Enter a 10-digit phone number">
 
             <label for="purpose">Purpose of Visit:</label>
             <input type="text" id="purpose" name="purpose" required>

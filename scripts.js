@@ -2,15 +2,31 @@ document.getElementById("registration-form").addEventListener("submit", function
     e.preventDefault();
     
     const formData = new FormData(this);
+    const submitButton = this.querySelector("button[type='submit']");
+    submitButton.disabled = true; // Disable the button to prevent multiple submissions
+    submitButton.textContent = "Submitting..."; // Show loading text
 
-    fetch("submit.php", {
+    fetch("https://formspree.io/f/meoabnbd", {
         method: "POST",
-        body: formData
+        body: formData,
+        headers: {
+            "Accept": "application/json"
+        }
     })
-    .then(response => response.text())
-    .then(data => {
-        alert(data);
-        document.getElementById("registration-form").reset();
+    .then(response => {
+        if (response.ok) {
+            alert("✅ Thanks! Your response has been submitted.");
+            document.getElementById("registration-form").reset();
+        } else {
+            alert("❌ Something went wrong while submitting.");
+        }
     })
-    .catch(error => console.error("Error:", error));
+    .catch(error => {
+        console.error("Error:", error);
+        alert("❌ An error occurred. Please try again later.");
+    })
+    .finally(() => {
+        submitButton.disabled = false; // Re-enable the button
+        submitButton.textContent = "Submit"; // Reset button text
+    });
 });
