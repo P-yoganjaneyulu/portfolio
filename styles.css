@@ -244,6 +244,7 @@ form button:hover {
   align-items: center;
   text-align: center;
   padding: 20px;
+  position: relative;
 }
 
 .header .profile-pic-container {
@@ -446,9 +447,10 @@ button:hover {
 
     .header .social-icons {
         position: static; /* Remove absolute positioning on mobile */
-        margin-top: 10px;
-        justify-content: center; /* Center the icons */
+        justify-content: center;
+        margin: 10px 0 0 0;
         gap: 10px;
+        width: 100%;
     }
 
     .header .social-icons img {
