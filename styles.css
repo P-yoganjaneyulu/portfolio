@@ -435,11 +435,13 @@ button:hover {
     }
 
     .header h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        margin-top: 20px;
     }
 
     .header p {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Adjust paragraph font size */
+        margin-top: 10px;
     }
 
     .header .social-icons {
@@ -451,16 +453,6 @@ button:hover {
 
     .header .social-icons img {
         width: 25px; /* Reduce icon size for smaller screens */
-        height: 25px;
-    }
-
-    .header .social-icons {
-        margin-top: 15px;
-        gap: 10px;
-    }
-
-    .header .social-icons img {
-        width: 25px;
         height: 25px;
     }
 
