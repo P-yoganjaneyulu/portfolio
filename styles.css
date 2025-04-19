@@ -261,6 +261,33 @@ form button:hover {
     transform: translateY(-3px);
 }
 
+/* Social Media Icons in Header */
+.header {
+    position: relative; /* Ensure the header is positioned for absolute child elements */
+}
+
+.header .social-icons {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    display: flex;
+    gap: 15px;
+}
+
+.header .social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.header .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.header .social-icons img {
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+}
+
 /* Keyframe animations */
 @keyframes fadeInUp {
     to {
