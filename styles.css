@@ -328,18 +328,62 @@ form button:hover {
 /* Responsive design */
 @media (max-width: 768px) {
     .navbar ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
     }
+
+    .navbar ul li {
+        margin: 10px 0; /* Add spacing between items */
+    }
+
+    .navbar ul li a {
+        padding: 10px 20px; /* Adjust padding for better touch targets */
+    }
+
     .projects-container, .skills-container {
         flex-direction: column;
     }
     .social-icons {
-        justify-content: center;
-        gap: 10px;
+        position: static; /* Remove absolute positioning */
+        justify-content: center; /* Center the icons */
+        margin-top: 10px; /* Add some spacing */
+        gap: 10px; /* Reduce the gap between icons */
     }
 
     .social-icons img {
-        width: 25px;
-        height: 25px;
+        width: 20px; /* Reduce icon size for smaller screens */
+        height: 20px;
+    }
+
+    .skills-container, .projects-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
+        gap: 15px; /* Add spacing between items */
+    }
+
+    .skill-card, .project {
+        width: 90%; /* Make cards take up most of the screen width */
+    }
+
+    body {
+        font-size: 14px; /* Reduce base font size */
+    }
+
+    .section-title {
+        font-size: 1.5em; /* Adjust section title size */
+    }
+
+    .cta-button {
+        font-size: 1em; /* Adjust button text size */
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    .profile-pic {
+        width: 150px; /* Reduce size for smaller screens */
+        height: 150px;
+    }
+
+    .section {
+        padding: 40px 10px; /* Reduce padding for smaller screens */
     }
 }
