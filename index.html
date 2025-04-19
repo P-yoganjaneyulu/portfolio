@@ -90,7 +90,7 @@
             <input type="email" id="email" name="email" required>
 
             <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone" required pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+            <input type="tel" id="phone" name="phone" required pattern="^\+?[0-9\s\-]{7,15}$" title="Enter a valid phone number">
 
             <label for="purpose">Purpose of Visit:</label>
             <input type="text" id="purpose" name="purpose" required>

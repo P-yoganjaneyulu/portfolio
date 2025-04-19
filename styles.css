@@ -333,4 +333,13 @@ form button:hover {
     .projects-container, .skills-container {
         flex-direction: column;
     }
+    .social-icons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
 }
